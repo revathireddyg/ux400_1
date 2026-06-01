@@ -1,0 +1,63 @@
+<mvc:View
+    controllerName="demo.second.secondproject.controller.App19"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <VBox class="sapUiSmallMargin" width="400px">
+
+        <Title text="Registration Form" class="sapUiSmallMarginBottom" />
+
+        <!-- Name -->
+        <Label text="Name *" />
+        <Input value="{/name}" placeholder="Enter Employee Name" valueState="{/nameState}" valueStateText="Name is required"/>
+
+        <!-- Surname -->
+        <Label text="Surname *" />
+        <Input value="{/surname}" placeholder="Enter Surname" valueState="{/surnameState}" valueStateText="Surname is required"/>
+
+        <!-- Mobile -->
+        <Label text="Mobile Number *" />
+        <Input value="{/mobile}" type="Number"
+            placeholder="Enter Mobile number"
+            valueState="{/mobileState}"
+            valueStateText="Enter valid 10-digit mobile number"/>
+
+        <!-- Email -->
+        <Label text="Email *" />
+        <Input value="{/email}"
+            placeholder="Enter Emailid"
+            valueState="{/emailState}"
+            valueStateText="Enter valid email"/>
+
+        <!-- Address -->
+        <Label text="Address" />
+        <TextArea value="{/address}" 
+        placeholder="Enter Address" />
+
+        <!-- Gender -->
+        <Label text="Gender" />
+        <RadioButtonGroup selectedKey="{/gender}">
+            <buttons>
+                <RadioButton text="Male" key="M"/>
+                <RadioButton text="Female" key="F"/>
+            </buttons>
+        </RadioButtonGroup>
+
+        <!-- Country -->
+        <Label text="Country" />
+        <Select selectedKey="{/country}">
+            <core:Item key="IN" text="India"/>
+            <core:Item key="US" text="USA"/>
+            <core:Item key="UK" text="UK"/>
+        </Select>
+
+        <!-- Submit Button -->
+        <Button
+            text="Submit"
+            type="Emphasized"
+            press="onSubmit"
+            class="sapUiSmallMarginTop"/>
+
+    </VBox>
+</mvc:View>

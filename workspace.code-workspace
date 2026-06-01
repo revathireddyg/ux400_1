@@ -1,0 +1,21 @@
+{"folders":[
+        {
+            "path": "first_project"
+        },
+        {
+            "name": "second_project",
+            "path": "second_project"
+        },
+        {
+            "name": "calculator_app",
+            "path": "calculator_app"
+        },
+        {
+            "name": "age_checker",
+            "path": "age_checker"
+        },
+        {
+            "name": "fragment",
+            "path": "fragment"
+        }
+    ],"settings":{}}

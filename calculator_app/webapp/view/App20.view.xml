@@ -1,0 +1,38 @@
+<!-- Links this view to App3 controller -->
+<!-- Namespace for MVC -->
+<!-- Default namespace for SAPUI5 mobile controls -->
+
+<mvc:View
+    controllerName="demo.calculator.calculatorapp.controller.App20"  
+    xmlns:mvc="sap.ui.core.mvc"   
+    xmlns="sap.m">                
+
+    <!-- VBox = Vertical layout container -->
+    <VBox class="sapUiSmallMargin" width="20rem">
+
+        <!-- Title control: displays heading text -->
+        <Title 
+            text="Max Length Validation" 
+            class="sapUiSmallMarginBottom"/>
+
+        <!-- Input field -->
+        <Input
+            id="inputField1"                    
+            value="{/inputText}"                
+            liveChange="onLiveChange"           
+            placeholder="Max 10 characters" />  
+        <!-- Unique ID of the input field -->
+        <!-- Data binding to 'inputText' property in model -->
+        <!-- Event triggered whenever user types -->
+        <!-- Hint text shown when input is empty -->
+
+
+        <!-- Text control -->
+        <Text
+            text="Length: {/length}"            
+            class="sapUiSmallMarginTop" />      
+            <!-- Displays current length from model property -->
+            <!-- Adds top spacing -->
+
+    </VBox>
+</mvc:View>

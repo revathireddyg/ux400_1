@@ -1,0 +1,38 @@
+<mvc:View
+    controllerName="demo.calculator.calculatorapp.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <App>
+        <Page title="Addition Calculator">
+
+            <content>
+
+                <VBox class="sapUiSmallMargin">
+
+                    <Input
+                        id="num1"
+                        placeholder="Enter First Number" />
+
+                    <Input
+                        id="num2"
+                        placeholder="Enter Second Number"
+                        class="sapUiSmallMarginTop" />
+
+                    <Button
+                        text="Add"
+                        press="onAdd"
+                        class="sapUiSmallMarginTop" />
+
+                    <Text
+                        id="resultText"
+                        class="sapUiSmallMarginTop" />
+
+                </VBox>
+
+            </content>
+
+        </Page>
+    </App>
+
+</mvc:View>

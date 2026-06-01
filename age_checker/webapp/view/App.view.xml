@@ -1,0 +1,46 @@
+<mvc:View
+    controllerName="demo.agechecker.agechecker.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <App>
+
+        <Page title="Age Eligibility Checker">
+
+            <content>
+
+                <VBox class="sapUiSmallMargin">
+
+                    <Label text="Candidate Name" />
+
+                    <Input
+                        id="candidateName"
+                        placeholder="Enter Name" />
+
+                    <Label
+                        text="Age"
+                        class="sapUiSmallMarginTop" />
+
+                    <Input
+                        id="candidateAge"
+                        type="Number"
+                        placeholder="Enter Age" />
+
+                    <Button
+                        text="Check Eligibility"
+                        press="onCheckEligibility"
+                        class="sapUiSmallMarginTop" />
+
+                    <Text
+                        id="resultText"
+                        class="sapUiSmallMarginTop" />
+
+                </VBox>
+
+            </content>
+
+        </Page>
+
+    </App>
+
+</mvc:View>

@@ -1,0 +1,30 @@
+<mvc:View
+    controllerName="demo.second.secondproject.controller.App13"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin" width="22rem">
+
+        <Title text="Reset Validation on Input Change" class="sapUiSmallMarginBottom" />
+
+        <Input
+            id="nameInput"
+            value="{/name}"
+            liveChange="onInputChange"
+            placeholder="Enter name"
+            class="sapUiSmallMarginBottom" />
+
+        <Input
+            id="emailInput"
+            value="{/email}"
+            liveChange="onInputChange"
+            placeholder="Enter email"
+            class="sapUiSmallMarginBottom" />
+
+        <Button
+            text="Validate"
+            type="Emphasized"
+            press="onValidate" />
+
+    </VBox>
+</mvc:View>

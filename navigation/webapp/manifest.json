@@ -1,0 +1,84 @@
+{
+    "_version": "1.59.0",
+
+    "sap.app": {
+        "id": "demo.nav.navigation",
+        "type": "application",
+        "title": "Routing Demo"
+    },
+
+    "sap.ui": {
+        "technology": "UI5"
+    },
+
+    "sap.ui5": {
+
+        "rootView": {
+            "viewName": "demo.nav.navigation.view.App",
+            "type": "XML",
+            "id": "App",
+            "async": true
+        },
+
+        "dependencies": {
+            "minUI5Version": "1.120.0",
+            "libs": {
+                "sap.m": {}
+            }
+        },
+
+        "routing": {
+
+            "config": {
+
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "demo.nav.navigation.view",
+                "controlId": "app",
+                "controlAggregation": "pages",
+                "async": true
+
+            },
+
+            "routes": [
+
+                {
+                    "pattern": "",
+                    "name": "home",
+                    "target": "home"
+                },
+
+                {
+                    "pattern": "second",
+                    "name": "second",
+                    "target": "second"
+                },
+
+                {
+                    "pattern": "third",
+                    "name": "third",
+                    "target": "third"
+                }
+
+            ],
+
+            "targets": {
+
+                "home": {
+                    "viewName": "Home"
+                },
+
+                "second": {
+                    "viewName": "Second"
+                },
+
+                "third": {
+                    "viewName": "Third"
+                }
+
+            }
+
+        }
+
+    }
+}

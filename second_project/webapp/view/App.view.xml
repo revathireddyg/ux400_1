@@ -1,0 +1,43 @@
+<mvc:View 
+    controllerName="demo.second.secondproject.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <App>
+        <Page title="Employee Details App">
+            <content>  
+                <VBox class="sapUiSmallMargin">
+                    <Label text="Employee Name" />
+                    <Input
+                        id="empName"
+                        placeholder="Enter Employee Name" />
+
+
+                    <Label
+                        text="Employee Age"
+                        class="sapUiSmallMarginTop" />
+                    <Input
+                        id="empage"
+                        placeholder="Enter Employee Age" />
+
+                     <Label
+                        text="Employee Address"
+                        class="sapUiSmallMarginTop" />
+                    <TextArea
+                        id="empaddress"
+                        placeholder="Enter Employee Address"
+                        rows="4" />
+
+
+                    <Button
+                        text="Display"
+                        press="onDisplay"
+                        class="sapUiSmallMarginTop" />
+                    <Text
+                        id="resultText"
+                        class="sapUiSmallMarginTop" />
+                </VBox>
+            </content>
+        </Page>
+    </App>
+</mvc:View>
