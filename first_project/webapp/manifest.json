@@ -1,0 +1,43 @@
+{
+    "_version": "1.12.0",
+
+    "sap.app": {
+        "id": "demo.first.firstproject",
+        "type": "application",
+        "title": "First Freestyle App",
+        "applicationVersion": {
+            "version": "1.0.0"
+        }
+    },
+
+    "sap.ui": {
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+
+    "sap.ui5": {
+
+        "rootView": {
+            "viewName": "demo.first.firstproject.view.App4",
+            "type": "XML",
+            "id": "App"
+        },
+
+        "dependencies": {
+            "minUI5Version": "1.120.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {}
+            }
+        },
+
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        }
+    }
+}
